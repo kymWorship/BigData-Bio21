@@ -7,6 +7,11 @@
 # BlueJ files
 *.ctxt
 
+# I/O files
+input/
+output/
+target/
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 .idea/

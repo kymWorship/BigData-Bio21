@@ -8,6 +8,10 @@ cache:
     - '$HOME/.m2/repository'
 
 script:
-  - mvn compile
-  - mvn exec:java -Dexec.mainClass="org.example.WordCount"
+  - mvn clean compile
+  - mkdir input
+  - echo "1 2 3 4 5" > input/test.txt
+  - mvn clean package
+  - mvn clean install
+  - java -jar -Dapple.awt.UIElement="true" target/WordCount-SNAPSHOT.jar -h
 

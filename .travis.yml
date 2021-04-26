@@ -13,5 +13,5 @@ script:
   - echo "1 2 3 4 5" > input/test.txt
   - mvn clean package
   - mvn clean install
-  - java -jar -Dapple.awt.UIElement="true" target/WordCount-SNAPSHOT.jar -h
+  - java -jar -Dapple.awt.UIElement="true" target/WordCount-1.0-SNAPSHOT.jar -h
 
